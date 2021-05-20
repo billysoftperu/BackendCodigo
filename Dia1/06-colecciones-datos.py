@@ -102,7 +102,13 @@ persona= {
 ,}
 
 print(persona['nombre'])
-# En JS seria...
+# en JS seria => persona.hobbies[0].conocimiento
+print(persona["hobbies"][0]['conocimiento'])
+persona['apellido'] = "Martinez"
+# en python si la llave del diccionario no existe lanzara un error y hara que el programa no continue
+# print(persona['sexo'])
+persona.pop("id")
+
 
 
 libro={
