@@ -10,6 +10,17 @@
 # ****
 # ****
 # ****
+def dibujar_rectangulo():
+
+
+altura = int(input("Ingrese la altura"))
+ancho = int(input("Ingrese el ancho"))
+for numero in range(altura):
+    for numero2 in range(ancho):
+        print("*", end="")
+    print("")
+
+dibujar_rectangulo()
 
 # Escribir una funcion que nosotros le ingresemos el lado de un hexagono y que lo dibuje
 # Ejemplo:
@@ -27,6 +38,17 @@
 #     *********
 #      *******
 #       *****
+def dibujar_octogano():
+    grosor = int(input("Ingrese el grosor del octagono"))
+    # es el grosor maximo que va a tener mi octogano
+    if grosor ==1:
+        
+
+    tope= (2*(grosor-1))+grosor
+
+
+
+
 
 # De acuerdo a la altura que nosotros ingresemos, nos tiene que dibujar el triangulo
 # invertido
