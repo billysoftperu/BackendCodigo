@@ -8,6 +8,7 @@ from flask import Flask, request
 
 print(__name__)
 app = Flask(__name__)
+productos=[]
 
 
 # Un decorrador es un patron de software que se utiliza para modificar el funcionamiento de una funcion o clase en 
@@ -26,13 +27,67 @@ def gestion_productos():
     if request.method == "POST":
         data = request.get_json()
         print(data)
+        productos.append(data)
         return {
-            "message": "Producto creado exitosamente"
-        }
+            "message": "Producto creado exitosamente",
+            "content": data
+        },201
     elif request.method == "GET":
         return {
-             "message": "Estos son los prroductos registrado"
+             "message": "Estos son los prroductos registrado",
+             "content": productos
+        },200
+
+# NOTA! Al hacer un get queda PRROHIBIDO enviar información mediante el BODY
+@app.route("/productos/<int:id>", methods=['PUT','DELETE','GET'])
+def gestion_producto(id):
+    print(id)
+    # buscar segun la posicion el producto, si el producto no existe, retornar un estado
+    # 404, sin embargo, si si existe, retornar el producto y un estado 200
+    
+    if len(productos) <= id:
+         return {
+            "message": "Producto no encontrado"
+        },404
+ 
+    if request.method =="GET": # Para devolver una informacion con GET
+    
+    # Método 1:
+    #    try: # Intentalo encontrar el contenido del producto
+    #        return {
+    #            "content": productos[id]
+    #        },200
+    #        productos[id]
+    #    except:
+    #        return {
+    #           "message": "Producto no encontrado"
+    #       }, 404
+
+    # Método 2:
+    
+        return{
+            "content": productos[id]
+        },200
+
+    elif request.method == "DELETE":
+        productos.pop(id)
+        return {
+            "message": "Producto eliminado existosamente"
         }
+
+    elif request.method == "PUT":
+        data = request.get_json()
+        productos[id]=data
+        return {
+            "message": " Producto actualizado exitosamente",
+            "content": productos[id]
+        },201
+
+@app.route("/productos/buscar")
+def buscar_productos():
+    print(request.args.get("nombre"))
+
+    return "Muy bien"
 
     
 
