@@ -1,6 +1,6 @@
-import re
-from sys import meta_path
 from flask import Flask, request
+
+from flask_cors import CORS
 
 # __name__ => muestra si el archivo en el cual se está llamando a la clase Flask, es el archivo principal del proyecto,
 # para evitar que la instancia de la clase de Flask se puede crrear varias veces
@@ -8,6 +8,11 @@ from flask import Flask, request
 
 print(__name__)
 app = Flask(__name__)
+
+
+# Hacerlo de esta manera hará que todos los valores se seten a un que permita absolutamente TODOS los origenes, metodos y cabeceras:
+CORS(app,methods=['GET','POST'],origins=['*'])
+
 productos=[]
 
 
@@ -16,7 +21,7 @@ productos=[]
 @app.route("/")
 def inicio():
     print('Me hicieron un llamado')
-    return "saludos desde mi API"
+    return "saludos desde mi API",200
 
 @app.route("/productos", methods=['GET','POST'])
 def gestion_productos():
@@ -34,7 +39,7 @@ def gestion_productos():
         },201
     elif request.method == "GET":
         return {
-             "message": "Estos son los prroductos registrado",
+             "message": "Estos son los productos registrado",
              "content": productos
         },200
 

@@ -50,4 +50,11 @@ print((myString1.title())) # Convierte las Mayúsculas en minúsculas
 print((myString2.upper())) # Convierte las Minúsculas en Mayúsculas
 print((myString2.lower())) # Convierte las Mayusculas en minusculas
 
-print((myString3.swapcase())) # Convierte el texto en mayusuclas y minusculas
+print((myString3.swapcase()))
+print((myString3.replace('Ricardo William','BILLYSOFT')))
+print((myString3.replace('Ricardo William','BILLYSOFT').lower()))
+print((myString3.count('l'))) # Cuenta el # de caracteres
+print((myString3.count('o'))) # Cuenta el # de caracteres
+print((myString3.startswith('Ricardo')))
+
+
