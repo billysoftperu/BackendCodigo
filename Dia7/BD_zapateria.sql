@@ -75,6 +75,14 @@ SELECT * FROM catagorias LEFT JOIN productos ON categorias.id = productos.catego
 
 SELECT * FROM categorias RIGHT JOIN productos ON categorias.id = productos.categoria_id;
 
+SELECT * FROM CATEGORIAS JOIN PRODUCTOS ON CATEGORIAS.ID = PRODUCTOS.CATEGORIA_ID WHERE CATEGORIAS.nombre="ZAPATO";
+
+#-----ALIAS => AS --------------------------*
+SELECT cat.nombre as 'nombre del producto', prod.precio, prod.disponible FROM CATEGORIAS AS cat JOIN PRODUCTOS as prod ON cat.ID = prod.CATEGORIA_ID WHERE cat.nombre="ZAPATO"; 
+
+
+
+
 
 
 
