@@ -26,3 +26,31 @@ PRIMARY KEY(id_actor)
 
 )ENGINE=INNODB;
 
+CREATE TABLE IF NOT EXISTS directores(
+id_director INT NOT NULL,
+nombre VARCHAR(120) NOT NULL,
+fecha_nacimiento DATE,
+pais_origen VARCHAR(120),
+PRIMARY KEY(id_director),
+peliculas_id_pelicula INT NOT NULL,
+CONSTRAINT fkdirector_peliculas
+FOREIGN KEY(peliculas_id_pelicula)
+REFERENCES peliculas(id_pelicula)
+
+)ENGINE=INNODB;
+
+CREATE TABLE IF NOT EXISTS actores_peliculas(
+peliculas_id_pelicula INT NOT NULL,
+actores_id_actor INT NOT NULL,
+PRIMARY KEY(peliculas_id_pelicula,actores_id_actor),
+CONSTRAINT fkactor_peliculas_actor
+FOREIGN KEY(actores_id_actor)
+REFERENCES actores(id_actor),
+
+CONSTRAINT fkactor_actor_peliculas
+FOREIGN KEY(peliculas_id_pelicula)
+REFERENCES peliculas(id_pelicula)
+
+)ENGINE=INNODB;
+
+

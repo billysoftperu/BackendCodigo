@@ -1,0 +1,6 @@
+SELECT * FROM alumnos
+LIMIT 10 OFFSET 60;
+
+SELECT * FROM alumnos
+WHERE 'Brandom'
+LIMIT 3 OFFSET 0;
