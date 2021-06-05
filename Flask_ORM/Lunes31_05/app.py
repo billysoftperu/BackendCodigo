@@ -4,16 +4,36 @@ from dotenv import load_dotenv
 from os import environ
 from config.conexion_bd import base_de_datos
 from flask_restful import Api
-from controllers.postre import PostreController, PostresController
-from models.postre import PostreModel
-from models.preparacion import PreparacionModel
-from models.ingrediente import IngredienteModel
+from controllers.postre import BusquedaPostre, PostreController, PostresController
+from controllers.preparacion import PreparacionesController
+from controllers.ingrediente import IngredienteController, IngredientesController
 from models.receta import RecetaModel
+from flask_swagger_ui import get_swaggerui_blueprint
+
 
 load_dotenv()
 
+# CONFIGURAR EL SWAGGER EN FLASK
+
+# Esta variable sirve para indicar en que ruta (endpoint) se encontrara la documentacion
+SWAGGER_URL = "/api/docs"
+API_URL = "/static/swagger.json"  # indicar la ubicacion del archivo json
+swagger_blueprint = get_swaggerui_blueprint(
+    SWAGGER_URL,
+    API_URL,
+    config={
+        'app_name': "Reposteria Flask - Swagger Documentation"
+    }
+)
+
+
+# FIN CONFIGURACION
+
 app = Flask(__name__)
+# sirve para registrar en el caso que nosotros tengamos un proyecto interno para agregarlo a un proyecto principal
+app.register_blueprint(swagger_blueprint)
 api = Api(app)
+
 # https://docs.sqlalchemy.org/en/14/core/engines.html
 # https://flask-sqlalchemy.palletsprojects.com/en/2.x/config/#connection-uri-format
 # dialect://username:password@host:port/database
@@ -42,6 +62,12 @@ def initial_controller():
 # DEFINO LAS RUTAS USANDO FLASK RESTFUL
 api.add_resource(PostresController, "/postres")
 api.add_resource(PostreController, "/postres/<int:id>")
+api.add_resource(BusquedaPostre, "/busqueda_postre")
+api.add_resource(PreparacionesController, "/preparaciones",
+                 "/preparaciones/<int:postre_id>")
+api.add_resource(IngredientesController, "/ingredientes")
+api.add_resource(IngredienteController, "/ingredientes/<int:id>")
+
 
 if __name__ == '__main__':
     app.run(debug=True)

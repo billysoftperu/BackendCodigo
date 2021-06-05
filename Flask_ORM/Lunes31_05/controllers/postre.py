@@ -30,7 +30,9 @@ class PostresController(Resource):
 
     def get(self):
         # SELECT * FROM postres;
+        # base_de_datos.session.query(PostreModel).all()
         postres = PostreModel.query.all()
+        print(postres)
         resultado = []
         for postre in postres:
             print(postre.json())
@@ -121,6 +123,7 @@ class PostreController(Resource):
                 'message': 'Postre no existe'
             }
 
+
 class BusquedaPostre(Resource):
     serializerBusqueda = reqparse.RequestParser()
     # se van a ubicar en el query string
@@ -135,9 +138,40 @@ class BusquedaPostre(Resource):
         type=str,
         location='args',
         required=False,
+        choices=('Familiar', 'Personal', 'Mediano'),
+        help='Opcion invalida, las opciones son Familiar, Personal, Mediano'
     )
 
     def get(self):
+        # Ejercicio
+        # primero validar si hay nombre, porcion o ambos
+        # SELECT * FROM postres where porcion = '' and nombre = ''
+        # luego devolver todos los postres que hagan match con la busqueda
         filtros = self.serializerBusqueda.parse_args()
         print(filtros)
-        return 'ok'
+        # from sqlalchemy import or_
+        # base_de_datos.session.query(PostreModel).filter_by(or_(postreNombre="3 leches", postreNombre="Selva Negra"))
+        if filtros.get('nombre') and filtros.get('porcion'):
+            resultado = base_de_datos.session.query(PostreModel).filter_by(
+                postreNombre=filtros.get('nombre'), postrePorcion=filtros.get('porcion')).all()
+
+        elif filtros.get('nombre'):
+            resultado = base_de_datos.session.query(PostreModel).filter_by(
+                postreNombre=filtros.get('nombre')).all()
+
+        elif filtros.get('porcion'):
+            resultado = base_de_datos.session.query(PostreModel).filter_by(
+                postrePorcion=filtros.get('porcion')).all()
+        else:
+            return {
+                'message': 'Necesitas dar al menos un parametro'
+            }, 400
+
+        postres = []
+        for postre in resultado:
+            postres.append(postre.json())
+        return {
+            "message": None,
+            "content": postres,
+            "success": True
+        }
