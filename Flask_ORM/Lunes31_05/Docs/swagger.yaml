@@ -4,8 +4,8 @@ info:
   version: '1.0'
   title: Reposteria
   contact: 
-    email: "ederiveroman@gmail.com"
-    name: "Eduardo de Rivero"
+    email: "billysoftperu@gmail.com"
+    name: "Ricardo William Merino Flores"
 host: '127.0.0.1:5000'
 basePath: /
 schemes:

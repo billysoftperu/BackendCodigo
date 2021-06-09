@@ -1,18 +1,15 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "API del manejo de los ingredientes de una reposteria",
     "version": "1.0",
     "title": "Reposteria",
-    "contact": {
-      "email": "billysoftperu@gmail.com",
-      "name": "Ricardo William Merino Flores"
-    }
+    "contact": {}
   },
   "host": "127.0.0.1:5000",
   "basePath": "/",
   "schemes": [
-    "https"
+    "https",
+    "http"
   ],
   "consumes": [
     "application/json"
@@ -23,7 +20,6 @@
   "paths": {
     "/postres": {
       "post": {
-        "description": "Endpoint para crear un nuevo postre",
         "summary": "/postres",
         "tags": [
           "Postres"
@@ -52,7 +48,7 @@
         }
       },
       "get": {
-        "description": "Endpoint que devuelve todos los postres",
+        "description": "El endpoin que devuelve todos los postres ",
         "summary": "/postres",
         "tags": [
           "Postres"
@@ -71,7 +67,7 @@
         }
       }
     },
-    "/postres/{id}": {
+    "/postres/1": {
       "get": {
         "summary": "/postres/<id>",
         "tags": [
@@ -82,15 +78,7 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Id del postre",
-            "required": true,
-            "type": "integer"
-          }
-        ],
+        "parameters": [],
         "responses": {
           "200": {
             "description": "",
@@ -110,13 +98,6 @@
         ],
         "parameters": [
           {
-            "name": "id",
-            "in": "path",
-            "description": "Id del postre",
-            "required": true,
-            "type": "integer"
-          },
-          {
             "name": "Body",
             "in": "body",
             "required": true,
@@ -134,7 +115,7 @@
         }
       },
       "delete": {
-        "summary": "Con esto eliminas un postre",
+        "summary": "/postres/<id>1",
         "tags": [
           "Postres"
         ],
@@ -143,15 +124,7 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Id del postre",
-            "required": true,
-            "type": "integer"
-          }
-        ],
+        "parameters": [],
         "responses": {
           "200": {
             "description": "",
@@ -171,30 +144,7 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [
-          {
-            "name": "nombre",
-            "in": "query",
-            "required": false,
-            "type": "string",
-            "description": "Nombre completo del postre"
-          },
-          {
-            "name": "porcion",
-            "in": "query",
-            "required": false,
-            "type": "array",
-            "description": "",
-            "items": {
-              "type": "string",
-              "enum": [
-                "Personal",
-                "Familiar",
-                "Mediano"
-              ]
-            }
-          }
-        ],
+        "parameters": [],
         "responses": {
           "200": {
             "description": "",
@@ -205,7 +155,7 @@
     },
     "/preparaciones": {
       "post": {
-        "description": "Endpoint para agregar una preparacion",
+        "description": "Endpoint para agregarr una prepararcion",
         "summary": "/preparaciones",
         "tags": [
           "Preparacion"
@@ -215,17 +165,7 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [
-          {
-            "name": "Body",
-            "in": "body",
-            "required": true,
-            "description": "",
-            "schema": {
-              "$ref": "#/definitions/~1preparacionesrequest"
-            }
-          }
-        ],
+        "parameters": [],
         "responses": {
           "200": {
             "description": "",
@@ -234,7 +174,7 @@
         }
       }
     },
-    "/preparaciones/{id}": {
+    "/preparaciones/8": {
       "get": {
         "summary": "/preparaciones/<int:id>",
         "tags": [
@@ -245,15 +185,7 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Id del postre",
-            "required": true,
-            "type": "integer"
-          }
-        ],
+        "parameters": [],
         "responses": {
           "200": {
             "description": "",
@@ -264,7 +196,7 @@
     },
     "/ingredientes": {
       "get": {
-        "description": "Endpoint para visualizar todos los ingredientes",
+        "description": "Endpoint para visualizar todos los intgredientes",
         "summary": "/ingredientes",
         "tags": [
           "Ingredientes"
@@ -283,7 +215,7 @@
         }
       },
       "post": {
-        "description": "Endpoint para la creacion de un ingrediente",
+        "description": "Endpoint para la creación de un ingrediente",
         "summary": "/ingredientes",
         "tags": [
           "Ingredientes"
@@ -312,7 +244,7 @@
         }
       }
     },
-    "/ingredientes/{id}": {
+    "/ingredientes/1": {
       "get": {
         "summary": "/ingredientes/<int:id>",
         "tags": [
@@ -323,15 +255,7 @@
         "produces": [
           "application/json"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Id del postre",
-            "required": true,
-            "type": "integer"
-          }
-        ],
+        "parameters": [],
         "responses": {
           "200": {
             "description": "",
@@ -350,13 +274,6 @@
           "application/json"
         ],
         "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "Id del postre",
-            "required": true,
-            "type": "integer"
-          },
           {
             "name": "Body",
             "in": "body",
@@ -380,8 +297,8 @@
     "/postresrequest": {
       "title": "/postresrequest",
       "example": {
-        "nombre": "Suspiro a la limeña",
-        "porcion": "Personal"
+        "nombre": "Selva Negra",
+        "porcion": "Mediano"
       },
       "type": "object",
       "properties": {
@@ -400,7 +317,7 @@
     "/postres/<id>request": {
       "title": "/postres/<id>request",
       "example": {
-        "nombre": "Tiramizu",
+        "nombre": "Suspiro a la limeña",
         "porcion": "Familiar"
       },
       "type": "object",
@@ -417,37 +334,10 @@
         "porcion"
       ]
     },
-    "/preparacionesrequest": {
-      "title": "/preparacionesrequest",
-      "example": {
-        "orden": 1,
-        "descripcion": "Medir los ingredientes y tenerlos listos",
-        "postre_id": 7
-      },
-      "type": "object",
-      "properties": {
-        "orden": {
-          "type": "integer",
-          "format": "int32"
-        },
-        "descripcion": {
-          "type": "string"
-        },
-        "postre_id": {
-          "type": "integer",
-          "format": "int32"
-        }
-      },
-      "required": [
-        "orden",
-        "descripcion",
-        "postre_id"
-      ]
-    },
     "/ingredientesrequest": {
       "title": "/ingredientesrequest",
       "example": {
-        "nombre": "Escencia de vainilla"
+        "nombre": "Harina 000"
       },
       "type": "object",
       "properties": {
