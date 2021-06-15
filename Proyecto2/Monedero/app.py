@@ -44,7 +44,7 @@ jsonwebtoken = JWT(app=app, authentication_handler=autenticador,
 
 jsonwebtoken.jwt_error_callback = manejo_error_JWT
 base_de_datos.init_app(app)
-# base_de_datos.drop_all(app=app)
+#base_de_datos.drop_all(app=app)
 base_de_datos.create_all(app=app)
 
 EXTENSIONES_PERMITIDAS = ['png', 'jpg', 'pdf']
