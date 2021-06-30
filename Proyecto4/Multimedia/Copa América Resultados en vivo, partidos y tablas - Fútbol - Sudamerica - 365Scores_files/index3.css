@@ -1,0 +1,645 @@
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCRc4AMP6lbBP.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fABc4AMP6lbBP.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCBc4AMP6lbBP.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBxc4AMP6lbBP.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+}
+
+/* vietnamese */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCxc4AMP6lbBP.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fChc4AMP6lbBP.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7mxKKTU1Kvnz.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4WxKKTU1Kvnz.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+}
+
+/* vietnamese */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7WxKKTU1Kvnz.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fCRc4AMP6lbBP.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fABc4AMP6lbBP.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* greek-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fCBc4AMP6lbBP.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBxc4AMP6lbBP.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+}
+
+/* vietnamese */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fCxc4AMP6lbBP.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fChc4AMP6lbBP.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+/* hebrew */
+@font-face {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/heebo/v10/NGS6v5_NC0k9P9H0TbFhsqMA6aw.woff2) format('woff2');
+    unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/heebo/v10/NGS6v5_NC0k9P9H2TbFhsqMA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* hebrew */
+@font-face {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/heebo/v10/NGS6v5_NC0k9P9H0TbFhsqMA6aw.woff2) format('woff2');
+    unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/heebo/v10/NGS6v5_NC0k9P9H2TbFhsqMA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* hebrew */
+@font-face {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/heebo/v10/NGS6v5_NC0k9P9H0TbFhsqMA6aw.woff2) format('woff2');
+    unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/heebo/v10/NGS6v5_NC0k9P9H2TbFhsqMA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    background-color: #ECF0F3;
+}
+
+.scores365 * {
+    line-height: initial;
+}
+
+.direction-rtl.scores365 * {
+    line-height: 1.2;
+}
+
+/*override default button style*/
+.scores365 button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.scores365.body-block {
+    position: fixed;
+    overflow: hidden;
+}
+
+.scores365.body-block-scroll-to-top {
+    position: relative;
+}
+
+.scores365.body-scroll {
+    overflow: auto;
+}
+
+.scores365.body-fixed {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+}
+
+.scores365 .template-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 63px;
+    z-index: 1;
+    background-color: rgb(33, 40, 45);
+    top: 0px;
+    position: fixed;
+}
+
+.scores365 .header-container {
+    margin: 0 auto;
+    max-width: 1224px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.scores365 .logo-container {
+}
+
+.scores365 .logo-link {
+    height: 66px;
+    width: 112px;
+    background-color: #21282d;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.scores365 .logo-image-wrapper {
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 112px;
+    height: 65px;
+    box-sizing: border-box;
+    padding: 6px 10px;
+    background-color: #21282d;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.scores365 .logo-image {
+    width: 96px;
+    height: 54px;
+    visibility: visible;
+}
+
+.scores365 .buttons-container {
+    display: flex;
+    align-items: center;
+}
+
+.scores365 .button-link {
+    display: flex;
+    align-items: center;
+    height: 63px;
+    padding: 0 16px;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    color: #7f97ab;
+    font-size: 16px;
+    font-weight: 500;
+    justify-content: center;
+    white-space: nowrap;
+    letter-spacing: -0.53px;
+    text-decoration: none;
+}
+
+.scores365 .button {
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 63px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    text-transform: none;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.scores365 .search-button {
+    display: none;
+}
+
+.scores365 .menu-container {
+    display: none;
+}
+
+.scores365 .sport-type-name {
+    font-size: 16px;
+    color: #7f97ab;
+    font-weight: 500;
+    letter-spacing: -0.53px;
+}
+
+.scores365 .my-scores-icon {
+    border-radius: 50%;
+    background-color: #7f97ab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    margin: 4px;
+}
+
+.scores365 .active-sport-type {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .scores365 .sport-type-logo {
+        fill: #7f97ab;
+        width: 16px;
+        height: 16px;
+        margin: 4px;
+    }
+
+    .scores365 .search-button {
+        -webkit-box-pack: center;
+        -webkit-box-align: center;
+        cursor: pointer;
+        background-color: rgb(3, 169, 244);
+        box-sizing: border-box;
+        height: 63px;
+        width: 63px;
+        min-width: 63px;
+        max-width: 63px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0px;
+        position: absolute;
+        top: 0;
+    }
+
+    .scores365 .search-logo {
+        height: 24px;
+        width: 24px;
+        cursor: pointer;
+        fill: rgb(255, 255, 255);
+    }
+
+    .scores365 .button-placeholder-wrapper {
+        width: 100%;
+        display: flex;
+        position: relative;
+    }
+
+    .scores365 .button-placeholder-container {
+        position: absolute;
+        width: 550px;
+        height: 14px;
+        margin-bottom: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .scores365 .button-placeholder-animation {
+        position: relative;
+        width: 650px;
+        height: 64px;
+        will-change: transform;
+        background-image: linear-gradient(to right, #21282d, #242d33 25%, #21282d);
+        animation-name: horizon-slides;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+
+    .scores365 .rtl .button-placeholder-animation {
+        animation-name: horizon-slides-rtl;
+    }
+
+    @keyframes horizon-slides {
+        from {
+            transform: translate3d(-650px, 0, 0)
+        }
+        to {
+            transform: translate3d(650px, 0, 0)
+        }
+    }
+
+    @keyframes horizon-slides-rtl {
+        from {
+            transform: translate3d(650px, 0, 0)
+        }
+        to {
+            transform: translate3d(-650px, 0, 0)
+        }
+    }
+
+    .scores365 .button-placeholder-content-container {
+        width: 112px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .scores365 .button-placeholder-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 112px;
+        height: 100%;
+        mix-blend-mode: color-dodge;
+        padding: 0 12px;
+    }
+
+    .scores365 .button-placeholder-content-icon-container {
+        height: 16px;
+        width: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: #2e3940;
+        margin: 0 6px;
+        border-radius: 50%;
+    }
+
+    .scores365 .button-placeholder-content-sport-type-container {
+        height: 14px;
+        width: 70px;
+        background-color: #2e3940;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+    .scores365 .additional-sport-type {
+        display: none;
+    }
+
+    .scores365 .active-sport-type {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto 12px;
+    }
+
+    .scores365 .template-container {
+        height: 48px;
+    }
+
+    .scores365 .logo-image {
+        width: 45px;
+        height: 26px;
+    }
+
+    .scores365 .logo-image-wrapper {
+        width: 45px;
+        height: 26px;
+    }
+
+    .scores365 .menu-container {
+        display: block;
+    }
+
+    .scores365 .menu-button {
+        cursor: pointer;
+        width: 32px;
+        height: 48px;
+    }
+
+    .scores365 .logo-link {
+        height: auto;
+        width: auto;
+        box-shadow: none;
+    }
+
+    .scores365 .button {
+        height: 48px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #ffffff;
+    }
+
+    .scores365 .button-link {
+        padding: 0 7px;
+        color: rgb(80, 80, 80);
+        text-decoration: none;
+    }
+
+    .scores365 .buttons-container {
+        margin: 0;
+    }
+
+    .scores365 .search-button {
+        display: block;
+        cursor: pointer;
+        width: 36px;
+        color: rgb(255, 255, 255);
+        justify-self: flex-end;
+        margin: 2px;
+        padding: 8px;
+    }
+
+    .scores365 .search-logo {
+        height: 20px;
+        cursor: pointer;
+        fill: rgb(255, 255, 255);
+    }
+}
+
+@media (min-width: 300px) and (max-width: 619px) {
+    .scores365 .logo-image-wrapper {
+        margin: 8px 0;
+    }
+}
+
