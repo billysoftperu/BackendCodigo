@@ -1,0 +1,24 @@
+{
+  "name": "inicio-express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+
+  "scripts":{
+    "start": "nodemon --exec babel-node src/index.js"
+  },
+
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  },
+  "description": "Proyecto de explicación de EXPRES",
+  "repository": "https://github.com/billysoftperu/BackendCodigo",
+  "author": "RicardoMerino",
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "@babel/node": "^7.14.7",
+    "@babel/preset-env": "^7.14.7"
+  }
+}
